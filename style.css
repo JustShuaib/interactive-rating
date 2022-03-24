@@ -4,3 +4,102 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  font-family: Overpass, sans-serif;
+  background: #121417;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+main {
+  border-radius: 10px;
+  background: #252d37;
+  max-width: 400px;
+  padding: 2rem;
+}
+
+main img {
+  padding: 0.7rem;
+  border-radius: 100%;
+  background: #343b46;
+}
+
+main h1 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+main p {
+  line-height: 1.5rem;
+  color: #959eac;
+}
+
+main ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.5rem 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main ul li {
+  list-style-type: none;
+  display: inline-block;
+  background: #343b46;
+  border-radius: 100%;
+  padding: 0.6rem 1.1rem;
+}
+
+main ul li:first-child {
+  padding: 0.7rem 1.2rem;
+}
+
+main ul button {
+  background: inherit;
+  border: none;
+  font-weight: 700;
+  font-family: inherit;
+  color: #959eac;
+  cursor: pointer;
+}
+
+main .submit-btn {
+  text-transform: uppercase;
+  font-family: Overpass, sans-serif;
+  background: #fb7413;
+  border-radius: 30px;
+  padding: 1rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  width: 100%;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 5px;
+  line-height: 1.5rem;
+}
+
+.attribution a {
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: #fb7413;
+}

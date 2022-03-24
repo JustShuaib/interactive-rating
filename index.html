@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End of Google font -->
     <link
       rel="icon"
       type="image/png"
@@ -17,6 +25,7 @@
   <body>
     <!-- Rating state start -->
     <main>
+      <img src="./images/icon-star.svg" alt="star" />
       <h1>How did we do?</h1>
       <p>
         Please let us know how we did with your support request. All feedback is
@@ -30,20 +39,22 @@
         <li><button type="button">5</button></li>
       </ul>
 
-      <button type="button">Submit</button>
+      <button class="submit-btn" type="button">Submit</button>
     </main>
 
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <section>
-      <p>You selected <span id="selected-rating"> 4</span> out of 5</p>
+    <!-- <section>
+      <p class="selected-container">
+        You selected <span id="selected-rating"> 4</span> out of 5
+      </p>
       <h2>Thank you!</h2>
-    </section>
-    <p>
-      We appreciate you taking the time to give a rating. If you ever need more
-      support, don’t hesitate to get in touch!
-    </p>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need more
+        support, don’t hesitate to get in touch!
+      </section>
+      </p> -->
     <!-- Thank you state end -->
     <div class="attribution">
       Challenge by

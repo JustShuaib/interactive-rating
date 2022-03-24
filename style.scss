@@ -1,5 +1,95 @@
+$pry-orange: hsl(25, 97%, 53%);
+$light-gray: hsl(217, 12%, 63%);
+$medium-gray: hsl(217, 15%, 24%);
+$dark-blue: hsl(213, 19%, 18%);
+$very-dark-blue: hsl(216, 12%, 8%);
+
+$font-size: 15px;
+$font-family: Overpass, sans-serif;
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+body {
+  font-family: $font-family;
+  background: $very-dark-blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+main {
+  border-radius: 10px;
+  background: $dark-blue;
+  max-width: 400px;
+  padding: 2rem;
+  img {
+    padding: 0.7rem;
+    border-radius: 100%;
+    background: $medium-gray;
+  }
+  h1 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  p {
+    line-height: 1.5rem;
+    color: $light-gray;
+  }
+  ul {
+    display: flex;
+    margin: 1.5rem 0;
+    justify-content: space-evenly;
+    li {
+      list-style-type: none;
+      display: inline-block;
+      background: $medium-gray;
+      border-radius: 100%;
+      padding: 0.6rem 1.1rem;
+      &:first-child {
+        padding: 0.7rem 1.2rem;
+      }
+    }
+    button {
+      background: inherit;
+      border: none;
+      font-weight: 700;
+      font-family: inherit;
+      color: $light-gray;
+      cursor: pointer;
+    }
+  }
+  .submit-btn {
+    text-transform: uppercase;
+    font-family: $font-family;
+    background: $pry-orange;
+    border-radius: 30px;
+    padding: 1rem;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    width: 100%;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+}
+section {
+  p.selected-container {
+  }
+  h2 {
+  }
+}
+.attribution {
+  position: absolute;
+  bottom: 5px;
+  line-height: 1.5rem;
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $pry-orange;
+    }
+  }
 }
