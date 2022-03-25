@@ -16,10 +16,11 @@ body {
   background: $very-dark-blue;
   color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   position: relative;
+  min-height: 98vh;
 }
 main {
   border-radius: 10px;
@@ -34,10 +35,6 @@ main {
   h1 {
     font-size: 1.5rem;
     margin: 1rem 0;
-  }
-  p {
-    line-height: 1.5rem;
-    color: $light-gray;
   }
   ul {
     display: flex;
@@ -76,11 +73,37 @@ main {
     cursor: pointer;
   }
 }
+p {
+  line-height: 1.5rem;
+  color: $light-gray;
+}
 section {
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  background: $dark-blue;
+  max-width: 400px;
+  padding: 2rem 1.5rem;
+  text-align: center;
   p.selected-container {
+    border-radius: 20px;
+    color: $pry-orange;
+    background: $medium-gray;
+    padding: 0.5rem 1rem;
+    margin: 1.5rem 0;
+    display: inline-block;
   }
   h2 {
+    margin-bottom: 0.5rem;
   }
+  p {
+    text-align: center;
+  }
+}
+.show-section {
+  opacity: 1;
 }
 .attribution {
   position: absolute;
