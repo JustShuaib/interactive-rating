@@ -41,6 +41,7 @@ main {
 }
 section {
   @include box();
+  z-index: 2;
   img {
     padding: 0.7rem;
     border-radius: 100%;
@@ -68,6 +69,10 @@ section {
         padding: 0.8rem 1.15rem;
         background: $medium-gray;
         border-radius: 50%;
+        &:hover {
+          color: white;
+          background: $pry-orange;
+        }
       }
     }
   }
@@ -83,6 +88,10 @@ section {
     border: none;
     color: white;
     cursor: pointer;
+    &:hover {
+      background-color: white;
+      color: $pry-orange;
+    }
   }
 }
 .thank-you-state {
@@ -90,9 +99,23 @@ section {
   opacity: 0;
   position: absolute;
   text-align: center;
+  z-index: 0;
+  font-family: $font-family;
   img {
     border-radius: 0%;
     background: inherit;
+  }
+  button {
+    position: absolute;
+    left: 4%;
+    top: 5%;
+    background: $medium-gray;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-family: inherit;
   }
   .selected-container {
     border-radius: 20px;
@@ -108,6 +131,7 @@ section {
 }
 .show {
   opacity: 1;
+  z-index: 2;
 }
 // body {
 //   font-family: $font-family;

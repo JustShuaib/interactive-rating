@@ -42,6 +42,7 @@ section {
   background: #252d37;
   max-width: 400px;
   padding: 2rem;
+  z-index: 2;
 }
 
 section img {
@@ -77,6 +78,11 @@ section ul li button {
   border-radius: 50%;
 }
 
+section ul li button:hover {
+  color: white;
+  background: #fb7413;
+}
+
 section .submit-btn {
   text-transform: uppercase;
   font-family: Overpass, sans-serif;
@@ -91,6 +97,11 @@ section .submit-btn {
   cursor: pointer;
 }
 
+section .submit-btn:hover {
+  background-color: white;
+  color: #fb7413;
+}
+
 .thank-you-state {
   border-radius: 10px;
   background: #252d37;
@@ -99,11 +110,26 @@ section .submit-btn {
   opacity: 0;
   position: absolute;
   text-align: center;
+  z-index: 0;
+  font-family: Overpass, sans-serif;
 }
 
 .thank-you-state img {
   border-radius: 0%;
   background: inherit;
+}
+
+.thank-you-state button {
+  position: absolute;
+  left: 4%;
+  top: 5%;
+  background: #343b46;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-family: inherit;
 }
 
 .thank-you-state .selected-container {
@@ -121,6 +147,7 @@ section .submit-btn {
 
 .show {
   opacity: 1;
+  z-index: 2;
 }
 
 .attribution {
