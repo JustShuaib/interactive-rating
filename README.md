@@ -12,9 +12,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -29,38 +27,37 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Solution screenshot](./images/Screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.github.com/JustShuaib/interactive-rating)
+- Live Site URL: [Add live site URL here](https://shuaib-interactive-rating.netlify.app/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [SASS](https://sass-lang.com/) - for the styling
 - JavaScript
 
 ### What I learned
 
+I learnt how to set up SASS in a project.
+I used Github's live SASS compiler to compile the SASS into CSS and I think I find it easier to use compared to using the terminal.
+
+I learnt the use of variables in SASS and nesting selectors, I find it totally awesome!
+
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+I would definitely love to deep dive more into SASS.
+This is the first project that I'll work on using SAS and I'd like to know more about when to use a mixin and whne to use inheritance.
 
 ## Author
 
 - Website - [Adeoti Shuaib](https://www.github.com/JustShuaib)
-- Frontend Mentor - [@justshuaib](https://www.frontendmentor.io/profile/JustShuaib)
+- Frontend Mentor - [@justshuaib](https://www.frontendmentor.io/profile/justshuaib)
 - Twitter - [@JustShuaib](https://www.twitter.com/JustShuaib)
