@@ -92,6 +92,10 @@ section {
     }
   }
 }
+.selected-btn {
+  background: $light-gray;
+  color: white;
+}
 .thank-you-state {
   @include box;
   opacity: 0;

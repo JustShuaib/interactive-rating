@@ -5,21 +5,30 @@ const homeBtn = document.querySelector(".home");
 submitBtn.addEventListener("click", handleSubmit);
 const thankYouState = document.querySelector(".thank-you-state");
 const selectedContainer = document.querySelector(".selected-container");
-list.addEventListener("click", handleSelectRate);
+list.addEventListener("click", handleClick);
 homeBtn.addEventListener("click", backToHome);
 
 let ratingValue;
-function handleSelectRate(e) {
-  ratingValue = e.target.textContent;
+function handleClick(e) {
+  const lists = [...e.currentTarget.children];
+  lists.forEach((list) => {
+    list.firstElementChild.classList.remove("selected-btn");
+  });
+  if (e.target.tagName === "BUTTON") {
+    e.target.classList.add("selected-btn");
+    ratingValue = e.target.textContent;
+  }
 }
 function handleSubmit(e) {
   if (ratingValue > 0) {
     selectedRating.textContent = ratingValue;
-  } else {
-    selectedContainer.textContent = "You did not select a rating!";
+    thankYouState.classList.add("show");
   }
-  thankYouState.classList.add("show");
 }
 function backToHome() {
+  [...list.children].forEach((list) => {
+    list.firstElementChild.classList.remove("selected-btn");
+  });
+  ratingValue = 0;
   thankYouState.classList.remove("show");
 }

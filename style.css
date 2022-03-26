@@ -101,6 +101,11 @@ section .submit-btn:hover {
   color: #fb7413;
 }
 
+.selected-btn {
+  background: #959eac;
+  color: white;
+}
+
 .thank-you-state {
   border-radius: 10px;
   background: #252d37;
