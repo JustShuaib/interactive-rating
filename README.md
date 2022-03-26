@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.github.com/JustShuaib/interactive-rating)
-- Live Site URL: [Add live site URL here](https://shuaib-interactive-rating.netlify.app/)
+- Solution URL: [Link to Github repo](https://www.github.com/JustShuaib/interactive-rating)
+- Live Site URL: [Link to live site](https://shuaib-interactive-rating.netlify.app/)
 
 ## My process
 
